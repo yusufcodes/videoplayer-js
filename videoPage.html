@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MMU Video</title>
+        
+        <script src="scripts/videoScripts.js"></script> <!-- tells HTML file where JS is -->
+    </head>
+    
+    <body>
+        <header>
+            <h1>Yusuf Chowdhury, 17031422, 01/11/17</h1>
+        </header>
+
+        <section id="videoContainer">
+            <video width=640 height=360  poster="images/poster.jpg"> <!-- controls removed -->
+                
+                <source src="video/mp4/mmu.mp4"> <!-- MP4 - widely supported -->
+                <source src="video/webM/MMU.webm"> <!-- support for firefox -->
+                
+            <p>Your browser doesn't support HTML5 video. You can download the video file <a href="video/mp4/mmu.mp4">here</a> instead</p>
+                
+            </video>
+            
+            <div id="videoControls">
+                
+                <button type="button" id="playPause">Play</button>
+                <button type="button" id="muteButton">Mute</button>
+                <button type="button" id="stopButton">Stop</button>
+                
+                <input type="range" id="seekBar" min=0 max=100 step=1 value=0> <!-- Seek slider -->
+                
+                
+                <input type="text" readonly  id="durationField" size="4"> <!-- Duration box, 'readonly' removes type cursor -->
+                
+                <input type="text" readonly id="currentTimeField" size="4" value="00:00"> <!-- Current time box -->
+                
+                <select id="speedControls">
+                    
+                    <option value="2">2x</option>
+                    <option value="1.75">1.75x</option>
+                    <option value="1.5">1.5x</option>
+                    <option value="1.25">1.25x</option>
+                    <option value="1" selected>1x</option>
+                    <option value="0.75">0.75x</option>
+                    <option value="0.5">0.5x</option>
+                
+                
+                </select>
+                <br>
+                <p>Volume Slider</p>
+                <input type="range" id="volumeSlider" min=0 max=1 step=0.1 value=0.5> <!-- Volume slider -->
+                
+                <p>Fast Forward Button</p>
+                <button type="button" id="fastForward">>></button>
+            
+            </div>
+            
+        </section>
+    </body>
+</html>
+
+<!-- 640 x 360-->
