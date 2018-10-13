@@ -1,2 +1,2 @@
 # videoplayer-js
-University Project - creation of a video player using JavaScript
+This is a video player which was programmed as part of a university assignment. The HTML and CSS was provided, as the aim was to create the JavaScript that made the player functional.
